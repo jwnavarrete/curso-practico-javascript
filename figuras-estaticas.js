@@ -16,7 +16,6 @@ console.groupEnd();
 
 /******************* FIN CUADRADO ***************************/
 
-
 /******************* TRIANGULO ***************************/
 
 console.group("Triangulos");
@@ -44,7 +43,6 @@ console.groupEnd();
 
 /******************* FIN TRIANGULO ***************************/
 
-
 /******************* CIRCULO ***************************/
 console.group("Circulo");
 //RADIO
@@ -60,6 +58,6 @@ console.log(`El PI del circulo es : ${PI}`);
 const permitroCirculo = diametroCirculo * PI;
 console.log(`El permitro del circulo es : ${permitroCirculo} cm`);
 //AREA
-const areaCirculo = (radioCirculo * radioCirculo) * PI;
+const areaCirculo = radioCirculo * radioCirculo * PI;
 console.log(`El area del circulo es : ${areaCirculo} cm cuadrados`);
 console.groupEnd();
