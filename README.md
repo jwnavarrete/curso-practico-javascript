@@ -8,3 +8,10 @@ Curso practico de Platzi
 - Segundo paso: Implementar las fórmulas en Javascript
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar JS con HTML
+
+#Taller # 2: Porcentajes y Descuentos
+
+- Primer paso: definir las fórmulas
+- Segundo paso: Implementar las fórmulas en Javascript
+- Tercer paso: Crear funciones
+- Cuarto paso: Integrar JS con HTML

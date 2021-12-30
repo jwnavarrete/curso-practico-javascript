@@ -5,9 +5,8 @@
   --lg: 18px;
   --xl: 20px;
   --xxl: 22px;
-  --purple: #cd56cd;
-  --green: rgb(73 205 73);  
-  --orange:orange;
+  --green: rgb(73 205 73);
+  --orange: orange;
   --blue: #567bcd;
 }
 
@@ -17,12 +16,12 @@ body {
 }
 
 .container {
-  margin: 25px;  
+  margin: 25px;
 }
 
 .intro {
   display: flex;
-  font-size: var(--lg);  
+  font-size: var(--lg);
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -32,26 +31,26 @@ body {
   font-size: var(--xxl);
 }
 
-.intro img{
+.intro img {
   width: 45px;
 }
 
-.event{
+.event {
   display: flex;
   flex-direction: column;
-  font-size: var(--lg);  
+  font-size: var(--lg);
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
 
-.event-content{
+.event-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-.event-content button{
+.event-content button {
   font-size: var(--lg);
   height: 40px;
   width: 150px;
@@ -75,6 +74,15 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.cart-title {
+  display: flex;  
+}
+
+.cart-title > h2 {
+  margin: 0 0 0 5px;
+  color: var(--light-color);
+}
+
 .cart-geometry p {
   color: var(--light-color);
 }
@@ -84,38 +92,35 @@ body {
 }
 
 .card-green {
-  background:var(--green);
+  background: var(--green);
 }
 
-.card-purple {
+.card-blue {
   background: var(--blue);
 }
 
 .card-orange {
-    background: var(--orange);
-  }
-
-.card-green .form-group > label{
-    background: var(--green);
+  background: var(--orange);
+}
+.form-group > label {
+  padding: 0 10px 0 10px;
 }
 
-.card-purple .form-group > label{
-    background: var(--blue);
+.card-green .form-group > label {
+  background: var(--green);
 }
 
-.card-orange .form-group > label{
-    background: var(--orange);
+.card-blue .form-group > label {
+  background: var(--blue);
 }
 
-.cart-geometry > h2 {
-  margin: 0;
-  color: var(--light-color);
+.card-orange .form-group > label {
+  background: var(--orange);
 }
 
-
-.form-group{
-    position: relative;
-    margin-bottom: 25px;
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .form-group > label {
@@ -138,7 +143,7 @@ body {
 
 .cart-input {
   border: 1px solid var(--light-color);
-  font-size: var(--md);
+  font-size: var(--md);  
 }
 
 .btn-cart button {
@@ -161,6 +166,29 @@ body {
   font-size: var(--xxl);
   color: var(--light-color);
   border-bottom: 1px solid var(--light-color);
+}
+
+.shape-square {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background: var(--light-color);  
+}
+
+.shape-triangle{
+  width: 0;
+  height: 0;
+  background-color: inherit;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid var(--light-color);
+}
+
+.shape-circle{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  background-color: var(--light-color);
 }
 
 @media (max-width: 640px) {

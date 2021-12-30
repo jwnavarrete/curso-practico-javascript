@@ -31,13 +31,13 @@ console.log(`Los lados del triangulo miden:
 `);
 
 /*CALCULAR EL PERIMETRO DEL TRIANGULO*/
-const alturaCuadrado = 5.5;
-console.log(`La altura del triangulo es : ${alturaCuadrado} cm`);
+const alturaTriangulo = 5.5;
+console.log(`La altura del triangulo es : ${alturaTriangulo} cm`);
 
 const permimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
 console.log(`El permitero del triangulo es : ${permimetroTriangulo} cm`);
 
-const areaTriangulo = (baseTriangulo * alturaCuadrado) / 2;
+const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
 console.log(`El area del triangulo es : ${areaTriangulo} cm`);
 console.groupEnd();
 

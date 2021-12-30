@@ -28,10 +28,10 @@
       <div class="event">
         <p>What are you going to calculate today?</p>
         <div class="event-content">
-            <button type="button">Geometry</button>
-            <button type="button">Discounts</button>
-            <button type="button">Statistics</button>
-            <button type="button">Analytics</button>
+          <button type="button">Geometry</button>
+          <button type="button">Discounts</button>
+          <button type="button">Statistics</button>
+          <button type="button">Analytics</button>
         </div>
       </div>
 
@@ -39,21 +39,37 @@
 
       <div class="cart-container">
         <div class="cart-geometry card-green">
-          <h2>Square</h2>
+          <div class="cart-title">
+            <span class="shape-square"></span>
+            <h2>Square</h2>
+          </div>
+ 
           <p>How long is each side of your square?</p>
           <div class="form-group">
             <label for="sideSquare">Side</label>
             <input type="number" id="sideSquare" class="cart-input" />
           </div>
           <div class="btn-cart">
-            <button type="button">Get Perimeter</button>
-            <button type="button">Get Area</button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+              Get Area
+            </button>
           </div>
-          <input type="text" class="cart-input input-result" readonly />
+          <input
+            type="text"
+            id="squareResult"
+            class="cart-input input-result"
+            readonly
+          />
         </div>
 
-        <div class="cart-geometry card-purple">
-          <h2>Triangle</h2>
+        <div class="cart-geometry card-blue">
+          <div class="cart-title">
+            <span class="shape-triangle"></span>
+            <h2>Triangle</h2>
+          </div>
           <p>What are the measeurements of your Triangle?</p>
           <div class="form-group">
             <label for="sideA">Side A</label>
@@ -68,33 +84,54 @@
             <input type="number" id="base" class="cart-input" />
           </div>
           <div class="form-group">
-            <label for="heit">Height</label>
-            <input type="number" id="heit" class="cart-input" />
+            <label for="height">Height</label>
+            <input type="number" id="height" class="cart-input" />
           </div>
           <div class="btn-cart">
-            <button type="button">Get Perimeter</button>
-            <button type="button">Get Area</button>
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo();">
+              Get Area
+            </button>
           </div>
-          <input type="text" class="cart-input input-result" readonly />
+          <input
+            type="text"
+            id="triangleResult"
+            class="cart-input input-result"
+            readonly
+          />
         </div>
 
         <div class="cart-geometry card-orange">
-          <h2>Circle</h2>
+          <div class="cart-title">
+            <span class="shape-circle"></span>
+            <h2>Circle</h2>
+          </div>
           <p>What is the radio of your circle?</p>
           <div class="form-group">
             <label for="radio">Radio</label>
             <input type="number" id="radio" class="cart-input" />
           </div>
           <div class="btn-cart">
-            <button type="button">Get Perimeter</button>
-            <button type="button">Get Area</button>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+              Get Area
+            </button>
           </div>
-          <input type="text" class="cart-input input-result" readonly />
+          <input
+            type="text"
+            id="circleResult"
+            class="cart-input input-result"
+            readonly
+          />
         </div>
       </div>
     </section>
 
-    <script src="/figuras-estaticas.js"></script>
-    <script src="/figuras-funciones.js"></script>
+    <script src="/asset/js/figuras-estaticas.js"></script>
+    <script src="/asset/js/figuras-funciones.js"></script>
   </body>
 </html>
