@@ -1,0 +1,29 @@
+[33mcommit 629c5b5732c3e529151efb2bb7ede87cc823721f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jwnavarrete <jwnavarretez@gmail.com>
+Date:   Thu Dec 30 10:39:15 2021 -0500
+
+    Porcentajes y Descuentos
+
+[33mcommit 8960b995c5e75b7adae68969d83c1115d45e0e83[m
+Author: jwnavarrete <jwnavarretez@gmail.com>
+Date:   Sun Dec 26 00:18:26 2021 -0500
+
+    Estilo de formularios
+
+[33mcommit ee0dde7a393b9e8341193e874e65f551b6d85acd[m
+Author: jwnavarrete <jwnavarretez@gmail.com>
+Date:   Sat Dec 25 19:11:38 2021 -0500
+
+    Separar figuras estaticas y figuras con funciones
+
+[33mcommit 066a493909f62192c304682645f2b4cf08df6e05[m
+Author: jwnavarrete <jwnavarretez@gmail.com>
+Date:   Sat Dec 25 02:15:43 2021 -0500
+
+    Calculadora con valores fijos
+
+[33mcommit f6c1a2e4d3913c708172c9730ceb855a13ba114d[m
+Author: John Navarrete <36737868+jwnavarrete@users.noreply.github.com>
+Date:   Fri Dec 24 17:16:42 2021 -0500
+
+    Initial commit

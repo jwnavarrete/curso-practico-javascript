@@ -12,4 +12,13 @@ const calcularPrecioConDescuento = (precio, descuento) =>{
 
 const precioNew = calcularPrecioConDescuento(250, 50)
 
+const onClickButtonPriceDiscount = () =>{
+    const InputPrice = document.getElementById('InputPrice');
+    const InputDiscount = document.getElementById('InputDiscount');
+    const priceValue = InputPrice.value;
+    const discountValue = InputDiscount.value;
+
+    const precioConDescuento =calcularPrecioConDescuento(priceValue, discountValue);
+}
+
 console.log(precioNew);

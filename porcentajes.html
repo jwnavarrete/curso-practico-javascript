@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asset/style/main2.css" />
     <script src="asset/js/porcentajes.js"></script>
     <title>Porcentaje</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Calculo de porcentaje</h1>
+      <h1>Calculo de porcentaje</h1>
+      <p>Caulcula el precio a pagar de tus productos con descuento</p>
+
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <label for="InputDiscount">Ingrese cupon de descuento</label>
+            <input type="number" id="InputDiscount" />
+            <button type="button" onclick="onClickButtonPriceDiscount()">
+              Calcular
+            </button>
+          </form>
+        </div>
+      </div>
     </header>
-    
-    <p>Este es el segundo taller del curso practico de Javascript</p>
 
+    <div class="container">
+      <section class="card-container">
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <img
+              src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="product"
+            />
+            <h2>Guitarra electrical effects full sound stereo</h2>
+          </div>
 
-</body>
+          <div class="card-footer">
+            <span>-15%</span>
+            <p>18,69</p>
+            <p>18,69</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <img
+              src="https://images.pexels.com/photos/265144/pexels-photo-265144.jpeg?cs=srgb&dl=pexels-pixabay-265144.jpg&fm=jpg"
+              alt="product"
+            />
+            <h2>Guitarra electrical effects full sound stereo</h2>
+          </div>
+
+          <div class="card-footer">
+            <span class="descuento">-15%</span>
+            <p>18,69</p>
+            <p>18,69</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <img
+              src="https://images.pexels.com/photos/92069/pexels-photo-92069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="product"
+            />
+            <h2>Guitarra electrical effects full sound stereo</h2>
+          </div>
+
+          <div class="card-footer">
+            <span class="descuento">-15%</span>
+            <p>18,69</p>
+            <p>18,69</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
