@@ -32,4 +32,8 @@ const lista1 = [
   
   const moda = lista1Array[lista1Array.length - 1];
   
-  
+  const number = [2,2,2,2,5,5,6,4,7,8,5,5,6,6,3,3,4,1,1];
+
+  const mode = (arr) => {
+    return arr.sort((a, b) => arr.filter(v => v ===a).length - arr.filter(v => v ===b).length ).pop();
+  } 
