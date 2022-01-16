@@ -15,8 +15,39 @@
     <title>Figuras Geometricas | Curso practico de Javascript</title>
   </head>
   <body>
+    <header>
+      <div class="navbar">
+        <nav class="navbar-left">
+          <ul>
+            <li class="home">
+              <a href="/index.html"
+                ><img src="/asset/img/logo.svg" alt="calculator"
+              /></a>
+            </li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/figuras.html">Geometric figures</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/porcentajes.html">Percents & Discounts</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/mediana.html">Mean, median and mode</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/salarios.html">Salary Analysis</a></li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-right">
+          <ul>
+            <li><img src="/asset/icons/menu-open.png" alt=""></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section class="container">
-      <div class="intro">
+      <div class="title">
         <img src="/asset/img/waving-hand.png" alt="calculator" />
         <p>
           Hi, I'm <strong>John Navarrete</strong> and I'll help you
@@ -25,31 +56,30 @@
         <img src="/asset/img/calculator.png" alt="calculator" />
       </div>
 
-      <div class="event">
+      <div class="subtitle">
         <p>What are you going to calculate today?</p>
-        <div class="event-content">
-          <button type="button">Geometry</button>
-          <button type="button">Discounts</button>
-          <button type="button">Statistics</button>
-          <button type="button">Analytics</button>
-        </div>
       </div>
 
-      <h1>Geometry</h1>
+      <div class="event-content">
+        <button type="button">Geometry</button>
+        <button type="button">Discounts</button>
+        <button type="button">Statistics</button>
+        <button type="button">Analytics</button>
+      </div>
 
-      <div class="cart-container">
-        <div class="cart-geometry card-green">
-          <div class="cart-title">
+      <div class="card-container">
+        <div class="card card-green card-text-white">
+          <div class="card-title">
             <span class="shape-square"></span>
             <h2>Square</h2>
           </div>
- 
+
           <p>How long is each side of your square?</p>
           <div class="form-group">
             <label for="sideSquare">Side</label>
-            <input type="number" id="sideSquare" class="cart-input" />
+            <input type="number" id="sideSquare" class="card-input" />
           </div>
-          <div class="btn-cart">
+          <div class="btn-card">
             <button type="button" onclick="calcularPerimetroCuadrado()">
               Get Perimeter
             </button>
@@ -60,34 +90,34 @@
           <input
             type="text"
             id="squareResult"
-            class="cart-input input-result"
+            class="card-input input-result"
             readonly
           />
         </div>
 
-        <div class="cart-geometry card-blue">
-          <div class="cart-title">
+        <div class="card card-blue card-text-white">
+          <div class="card-title">
             <span class="shape-triangle"></span>
             <h2>Triangle</h2>
           </div>
           <p>What are the measeurements of your Triangle?</p>
           <div class="form-group">
             <label for="sideA">Side A</label>
-            <input type="number" id="sideA" class="cart-input" />
+            <input type="number" id="sideA" class="card-input" />
           </div>
           <div class="form-group">
             <label for="sideB">Side B</label>
-            <input type="number" id="sideB" class="cart-input" />
+            <input type="number" id="sideB" class="card-input" />
           </div>
           <div class="form-group">
             <label for="base">Base</label>
-            <input type="number" id="base" class="cart-input" />
+            <input type="number" id="base" class="card-input" />
           </div>
           <div class="form-group">
             <label for="height">Height</label>
-            <input type="number" id="height" class="cart-input" />
+            <input type="number" id="height" class="card-input" />
           </div>
-          <div class="btn-cart">
+          <div class="btn-card">
             <button type="button" onclick="calcularPerimetroTriangulo()">
               Get Perimeter
             </button>
@@ -98,22 +128,22 @@
           <input
             type="text"
             id="triangleResult"
-            class="cart-input input-result"
+            class="card-input input-result"
             readonly
           />
         </div>
 
-        <div class="cart-geometry card-orange">
-          <div class="cart-title">
+        <div class="card card-orange card-text-white">
+          <div class="card-title">
             <span class="shape-circle"></span>
             <h2>Circle</h2>
           </div>
           <p>What is the radio of your circle?</p>
           <div class="form-group">
             <label for="radio">Radio</label>
-            <input type="number" id="radio" class="cart-input" />
+            <input type="number" id="radio" class="card-input" />
           </div>
-          <div class="btn-cart">
+          <div class="btn-card">
             <button type="button" onclick="calcularPerimetroCirculo()">
               Get Perimeter
             </button>
@@ -124,7 +154,7 @@
           <input
             type="text"
             id="circleResult"
-            class="cart-input input-result"
+            class="card-input input-result"
             readonly
           />
         </div>

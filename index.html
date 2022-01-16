@@ -1,40 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Javascript</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asset/style/main.css" />
+
+    <title>Figuras Geometricas | Curso practico de Javascript</title>
+  </head>
+  <body>
     <header>
-        <h1>Talleres del curso practico de Javascript</h1>
-        <p>Estos retos fueron desarrollados por John Navarrete</p>
+      <div class="navbar">
+        <nav class="navbar-left">
+          <ul>
+            <li class="home">
+              <a href="/index.html"
+                ><img src="/asset/img/logo.svg" alt="calculator"
+              /></a>
+            </li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/figuras.html">Geometric figures</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/porcentajes.html">Percents & Discounts</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/mediana.html">Mean, median and mode</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/salarios.html">Salary Analysis</a></li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-right">
+          <ul>
+            <li><img src="/asset/icons/open-menu.png" alt=""></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section>
-        <nav>
-            <ul>
-                <ol>
-                    <li>
-                        <a href="/figuras.html">Taller #1</a>
-                    </li>
-                    <li>
-                        <a href="/porcentajes.html">Taller #2</a>
-                    </li>
-                    <li>
-                        <a href="/mediana.html">Taller #3</a>
-                    </li>
-                    <li>
-                        <a href="/moda.html">Taller #4</a>
-                    </li>
-                    <li>
-                        <a href="/salarios.html">Taller #5</a>
-                    </li>
-                </ol>
-            </ul>
-        </nav>
+    <section class="container">
+      <div class="title">
+        <img src="/asset/img/waving-hand.png" alt="calculator" />
+        <strong> Curso Practico de Javascript </strong>
+      </div>
+
+      <div class="subtitle">
+        <p>
+          Sitio web creado con el fin de poner en practica lo aprendido en
+          Platzi
+        </p>
+      </div>
+
+      <!-- <div class="card-container">
+        <div class="card-geometry card-green">
+          <div class="card-title">
+            <span class="shape-square"></span>
+            <h2>Square</h2>
+          </div>
+
+          <p>How long is each side of your square?</p>
+          <div class="form-group">
+            <label for="sideSquare">Side</label>
+            <input type="number" id="sideSquare" class="card-input" />
+          </div>
+          <div class="btn-card">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+              Get Area
+            </button>
+          </div>
+          <input
+            type="text"
+            id="squareResult"
+            class="card-input input-result"
+            readonly
+          />
+        </div>
+
+        <div class="card-geometry card-blue">
+          <div class="card-title">
+            <span class="shape-triangle"></span>
+            <h2>Triangle</h2>
+          </div>
+          <p>What are the measeurements of your Triangle?</p>
+          <div class="form-group">
+            <label for="sideA">Side A</label>
+            <input type="number" id="sideA" class="card-input" />
+          </div>
+          <div class="form-group">
+            <label for="sideB">Side B</label>
+            <input type="number" id="sideB" class="card-input" />
+          </div>
+          <div class="form-group">
+            <label for="base">Base</label>
+            <input type="number" id="base" class="card-input" />
+          </div>
+          <div class="form-group">
+            <label for="height">Height</label>
+            <input type="number" id="height" class="card-input" />
+          </div>
+          <div class="btn-card">
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo();">
+              Get Area
+            </button>
+          </div>
+          <input
+            type="text"
+            id="triangleResult"
+            class="card-input input-result"
+            readonly
+          />
+        </div>
+
+        <div class="card-geometry card-orange">
+          <div class="card-title">
+            <span class="shape-circle"></span>
+            <h2>Circle</h2>
+          </div>
+          <p>What is the radio of your circle?</p>
+          <div class="form-group">
+            <label for="radio">Radio</label>
+            <input type="number" id="radio" class="card-input" />
+          </div>
+          <div class="btn-card">
+            <button type="button" onclick="calcularPerimetroCirculo()">
+              Get Perimeter
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+              Get Area
+            </button>
+          </div>
+          <input
+            type="text"
+            id="circleResult"
+            class="card-input input-result"
+            readonly
+          />
+        </div>
+      </div>-->
     </section>
-    
-</body>
+
+    <script src="/asset/js/figuras-estaticas.js"></script>
+    <script src="/asset/js/figuras-funciones.js"></script>
+  </body>
 </html>

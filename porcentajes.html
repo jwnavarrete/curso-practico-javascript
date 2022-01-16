@@ -10,38 +10,81 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/asset/style/main2.css" />
+    <link rel="stylesheet" href="/asset/style/main.css" />
+
     <script src="asset/js/porcentajes.js"></script>
     <title>Porcentaje</title>
   </head>
   <body>
     <header>
-      <h1>Calculo de porcentaje</h1>
-      <p>Caulcula el precio a pagar de tus productos con descuento</p>
+      <div class="navbar">
+        <nav class="navbar-left">
+          <ul>
+            <li class="home">
+              <a href="/index.html"
+                ><img src="/asset/img/logo.svg" alt="calculator"
+              /></a>
+            </li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/figuras.html">Geometric figures</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/porcentajes.html">Percents & Discounts</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/mediana.html">Mean, median and mode</a></li>
+          </ul>
+          <ul>
+            <li class="menu-item"><a href="/salarios.html">Salary Analysis</a></li>
+          </ul>
+        </nav>
 
-      <div class="card">
-        <div class="card-body">
-          <form>
-            <label for="InputDiscount">Ingrese cupon de descuento</label>
-            <input type="number" id="InputDiscount" />
-            <button type="button" onclick="onClickButtonPriceDiscount()">
-              Calcular
-            </button>
-          </form>
-        </div>
+        <nav class="navbar-right">
+          <ul>
+            <li><img src="/asset/icons/menu-open.png" alt=""></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
     <div class="container">
+      <div class="title">
+        <img src="/asset/img/waving-hand.png" alt="hello-hand" />
+        <p>
+          Hi, This page contains <strong>Percents and Discounts</strong> Let me
+          help you
+          <strong>With this</strong>
+        </p>
+        <img src="/asset/img/discount.png" alt="discount" />
+      </div>
+      <div class="subtitle">
+        <p>What Percentage are you going to calculate today</p>
+      </div>
+
+      <div class="event-content">
+        <button type="button">5% Discounts</button>
+        <button type="button">10% Discounts</button>
+        <button type="button">25% Discounts</button>
+        <button type="button">50% Discounts</button>
+      </div>
+
       <section class="card-container">
-        <div class="card">
-          <div class="card-header"></div>
+        <div class="card card-orange">
+          <div class="card-header">
+            <h3>Guitarra electrical effects full sound stereo</h3>
+          </div>
           <div class="card-body">
             <img
-              src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="/asset/img/audifonos.png"
               alt="product"
             />
-            <h2>Guitarra electrical effects full sound stereo</h2>
+          </div>
+
+          <div class="price-discount">
+            <div class="form-group">
+              <label for="Price">Price</label>
+              <input type="number" id="Price" class="card-input" value="150" />
+            </div>
           </div>
 
           <div class="card-footer">
@@ -51,16 +94,22 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-header"></div>
+        <div class="card card-blue">
+          <div class="card-header">
+            <h3>Laptop Dell Inspirion I5</h3>
+          </div>
           <div class="card-body">
             <img
-              src="https://images.pexels.com/photos/265144/pexels-photo-265144.jpeg?cs=srgb&dl=pexels-pixabay-265144.jpg&fm=jpg"
+              src="/asset/img/laptop.png"
               alt="product"
             />
-            <h2>Guitarra electrical effects full sound stereo</h2>
           </div>
-
+          <div class="price-discount">
+            <div class="form-group">
+              <label for="Price">Price</label>
+              <input type="number" id="Price" class="card-input" value="650" />
+            </div>
+          </div>
           <div class="card-footer">
             <span class="descuento">-15%</span>
             <p>18,69</p>
@@ -68,16 +117,22 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-header"></div>
+        <div class="card card-green">
+          <div class="card-header">
+            <h3>Iphone11</h3>
+          </div>
           <div class="card-body">
             <img
-              src="https://images.pexels.com/photos/92069/pexels-photo-92069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="/asset/img/iphone11.png"
               alt="product"
             />
-            <h2>Guitarra electrical effects full sound stereo</h2>
           </div>
-
+          <div class="price-discount">
+            <div class="form-group">
+              <label for="Price">Price</label>
+              <input type="number" id="Price" class="card-input" value="950" />
+            </div>            
+          </div>
           <div class="card-footer">
             <span class="descuento">-15%</span>
             <p>18,69</p>
